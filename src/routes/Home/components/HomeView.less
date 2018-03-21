@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  background-size: cover;
+  background-position: top center;
+  background-image: url("../assets/banner.jpg");
+}
+
+ul,li,h1,h2,h3,h4,h5,h6,p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .4rem;
+
+  .header-left {
+    color: white;
+    font-size: .6rem;
+  }
+
+  .header-middle ul{
+    display: flex;
+    flex-direction: row;
+    li {
+      color: white;
+      font-size: .3rem;
+      margin: 0 .3rem;
+      padding: .2rem 0;
+      cursor: pointer;
+      &.active {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+
+  .header-right {
+    color: white;
+    font-size: .5rem;
+    display: flex;
+
+    .icon {
+      border-right: 1px solid white;
+      padding-right: .2rem;
+      margin-right: .2rem;
+      display: flex;
+
+      .iconfont{
+        font-size: .8rem;
+      }
+    }
+
+    .tel {
+      line-height: .9rem;
+    }
+
+  }
+}
+
+.banner {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(28, 28, 28, .7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .banner-top {
+    text-align: center;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-weight: normal;
+      font-size: .6rem;
+      margin-bottom: .2rem;
+    }
+
+    p {
+      font-size: .34rem;
+    }
+  }
+
+  .banner-footer {
+    background-color: rgba(25, 25, 25, .8);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      li {
+        font-size: .3rem;
+        text-align: center;
+        width: 15%;
+        margin: 0 .5rem;
+        line-height: .6rem;
+      }
+    }
+  }
+}
